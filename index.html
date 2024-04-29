@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class=" overflow-hidden bg-black">
+    <div class="loadingScreen bg-black position-fixed top-0 start-0 end-0 bottom-0 ">
+        <div class="d-flex justify-content-center align-items-center h-100 w-100">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <nav>
+        <div class="navbar-left">
+            <div class="container">
+                <div class="row ">
+                    <div class="d-flex flex-column justify-content-between align-items-center  min-vh-100 ">
+                        <figure class="my-5 ">
+                            <img src="images/logo.png"class= "w-100" alt="">
+                       
+                        </figure>
+                        <div class="text-center " id="barsIcon">
+                            <i class="fa-solid fa-bars fs-2 cursor-pointer"></i>
+                        </div>
+                        <div class="text-center my-20">
+                            <i class="fa-solid fa-globe d-block cursor-pointer"></i>
+                            <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-left-links bg-black">
+            <ul class="nav-links-list list-unstyled " id="menu">
+                <li id="searchLink">
+                    <a class="nav-link fw-semibold" href="#search" id>Search</a>
+                </li>
+                <li id="categoryLink">
+                    <a class="nav-link fw-semibold" href="#categories">Categories</a>
+
+                </li>
+                <li id="AreaLink">
+                    <a class="nav-link fw-semibold" href="#area">Area</a>
+                </li>
+                <li id="ingredientsLink">
+                    <a class="nav-link fw-semibold" href="#ingradients">Ingradients</a>
+
+                </li>
+                <li id="contactLink">
+                    <a class="nav-link fw-semibold" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+            <div class="nav-social">
+                <i class="fa-brands fa-facebook me-2 cursor-pointer"></i>
+                <i class="fa-brands fa-twitter me-2 cursor-pointer"></i>
+                <i class="fa-solid fa-globe me-2 cursor-pointer"></i>
+                <p>Copyright Â&copy; 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="searchSec position-relative" id="search">
+        <div class="container searchForm"></div>
+      </section>
+
+    <section class="signUpSec" id="signUp">
+        <div class="container">
+          <div class="signUpForm"></div>
+        </div>
+      </section>
+
+    <section id="mealsMain" class="text-light">
+        <div class="container ">
+            <div class="row mealsContainer g-4   "></div>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

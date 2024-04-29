@@ -1,0 +1,132 @@
+.loader{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1.15s linear infinite;
+}
+.loader::after{
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius:50% ;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 4px solid yellow;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .navbar-left {
+    background-color: var(--bs-white);
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    width: 70px;
+}
+
+.navbar-left-links {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -251px;
+    z-index: 999;
+    background-color: var(--main-color);
+    width: 251px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--bs-white);
+}
+
+ul li {
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .navbar-left {
+        width: 60px;
+    }
+
+    .navbar-left-links {
+        left: -200px;
+        width: 185px;
+    }
+
+    .nav-social {
+        font-size: 14px;
+    }
+}
+
+/* Navbar */
+
+/* Start Main Content */
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+.navbar-left-links,
+.nav-social i,
+.mealInfo,
+.mealCateg,
+.mealArea,
+.mealIngradient {
+  cursor: pointer;
+}
+.recipe-layer {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    top: 100%;
+    padding: 10px;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.item:hover .recipe-layer {
+    top: 0;
+}
+  .mealOverlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    -webkit-transition: top 600ms;
+    -o-transition: top 600ms;
+    transition: top 600ms;
+  }
+  
+  .mealInfo:hover .mealOverlay {
+    top: 0 !important;
+    height: 100%;
+  }
+  
+  .mealCateg .mealOverlay {
+    top: 200%;
+  }
+  
+  .mealCateg:hover .mealOverlay {
+    top: 0%;
+  }
+  
